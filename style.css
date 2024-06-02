@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+:focus {
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+body {
+    margin: 15px;
+    padding: 10px;
+    background: linear-gradient(to right, #F79981, #FC6281) fixed; /* Gradient background */
+    background-size: 100% 100%;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid black; /* Add border */
+    border-radius: 8px; /* Slightly rounded corners */
+    width: 40%; /* Set width to 40% of the window */
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to right, #F79981, #FC6281);
+    
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.search-container input,
+.search-container .suggestions {
+    width: 40%;
+    background: linear-gradient(to bottom right, #F79981, #FC6281); /* Apply same gradient as body */
+}
+
+.search-container .suggestions {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(to bottom right, #F79981, #FC6281); /* Apply same gradient as body */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul.has-suggestions {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul li {
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+ul li:hover {
+    background-color: #F79981;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
